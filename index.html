@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Particles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="path_to_your_logo/galaxy_logo.png" type="image/png">
+    <script src="uv.bundle.js"></script>
+    <script src="uv.config.js"></script>
+    <script src="uv.handler.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <h1>Welcome to the Galaxy</h1>
+    <div class="button-container">
+        <a href="games.html"><button class="rounded-button">Games</button></a>
+        <a href="search.html"><button class="rounded-button">Search</button></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('uv.sw.js');
+            });
+        }
+    </script>
+</body>
+</html>
